@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hideMenuNav {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: calc(100vh - 48px);
+  top: "0";
+  right: 48px;
+  background: #6a6964;
+  z-index: 50;
+
+  /* From https://css.glass */
+
+  background: rgba(12, 55, 141, 0.63);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border-left: 1px solid rgba(255, 255, 255, 0.877); */
+}
+
+.showMenuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 48px);
+  top: 48px;
+  right: 0;
+  background: #6a6964;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 50;
+
+  /* From https://css.glass */
+
+  background: rgba(12, 55, 141, 0.63);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border-left: 1px solid rgba(255, 255, 255, 0.877); */
+}
+
+/*slider*/
+.swiper {
+  width: 100%;
+  height: calc(100vh - 171px);
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #ffffff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Logos animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-flex;
+  animation: 35s slide infinite linear;
+}
+
+.image {
+  height: 50px;
+  margin: 0 35px;
+}
