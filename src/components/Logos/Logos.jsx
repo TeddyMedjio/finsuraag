@@ -10,7 +10,7 @@ import visana from "../../../public/img/visana.png";
 
 export default function Logos() {
   return (
-    <div className="logos container mx-auto mt-[800px] lg:mt-[350px] ">
+    <div className="logos container mx-auto mt-[800px] md:mt-[400px] ">
       <div className="logos-slide ">
         <Image src={allianz} height="auto" alt="logo2" className="image" />
         <Image src={innova} height="auto" alt="logo1" className="image" />

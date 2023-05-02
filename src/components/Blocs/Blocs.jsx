@@ -43,8 +43,7 @@ export default function Blocs() {
               Für dich als Privatperson gibt es unzählige Versicherungen, welche
               in gewissen Situation sehr hilfreich, wenn nicht sogar
               obligatorisch sein können. In einer Beratung zeigen dir unsere
-              Experten gerne die optimale Versicherungslösung für deinen Bedarf
-              auf.
+              Experten gerne die optimale Versicherungslösung für deinen ...
             </p>
             <Link href="/" className="flex items-center group">
               <p className=" text-white text-xl font-bold mr-1">

@@ -1,14 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-import engagiert from "../../../public/img/engagiert.png";
-import innovativ from "../../../public/img/innovativ.png";
-import kundennah from "../../../public/img/kundennah.png";
 
 export default function Services() {
   return (
-    <div className=" bg-[#F1F9FF] pb-52">
-      <div className="container mx-auto px-5 py-20">
-        <div className="flex flex-col items-center justify-center text-center mb-20">
+    <div className=" bg-[#F1F9FF] py-20 pb-64">
+      <div className="container mx-auto px-5 ">
+        <div className="flex flex-col items-center justify-center text-center mb-20 ">
           <h2 className=" text-brand-blue uppercase font-bold text-4xl mb-5 ">
             Finsura AG
           </h2>
@@ -23,15 +19,9 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center space-x-5 ">
-          <div className="relative flex-1 group">
-            <Image
-              src={engagiert}
-              height="auto"
-              alt="mains qui se saluent"
-              className="rounded-2xl"
-            />
-            <div className=" absolute top-72 transition-all duration-300 group-hover:top-64 p-10 bg-white rounded-2xl shadow-sm ">
+        <div className="flex items-center justify-center md:justify-normal flex-wrap ">
+          <div className="hands flex-1 group min-w-[309px] max-w-[409px] ">
+            <div className=" mt-72 transition-all duration-300 group-hover:mt-64 p-10 bg-white rounded-2xl shadow-sm ">
               <h2 className=" text-4xl font-bold text-brand-blue mb-5">
                 Engagiert
               </h2>
@@ -49,14 +39,8 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="relative flex-1 group">
-            <Image
-              src={innovativ}
-              height="auto"
-              alt="mains qui se saluent"
-              className="rounded-2xl"
-            />
-            <div className=" absolute top-72 transition-all duration-300 group-hover:top-64 p-10 bg-white rounded-2xl shadow-sm ">
+          <div className="people flex-1 group min-w-[309px] max-w-[409px] md:ml-5 mt-64 md:mt-0">
+            <div className="  mt-72 transition-all duration-300 group-hover:mt-64 p-10 bg-white rounded-2xl shadow-sm ">
               <h2 className=" text-4xl font-bold text-brand-blue mb-5">
                 Innovativ
               </h2>
@@ -74,14 +58,8 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="relative flex-1 group">
-            <Image
-              src={kundennah}
-              height="auto"
-              alt="mains qui se saluent"
-              className="rounded-2xl"
-            />
-            <div className=" absolute top-72 transition-all duration-300 group-hover:top-64 p-10 bg-white rounded-2xl shadow-sm  ">
+          <div className="man flex-1 group min-w-[309px] max-w-[409px] mt-64 lg:ml-5 lg:mt-0   ">
+            <div className="  mt-72 transition-all duration-300 group-hover:mt-64 p-10 bg-white rounded-2xl shadow-sm  ">
               <h2 className=" text-4xl font-bold text-brand-blue mb-5">
                 kundennah
               </h2>

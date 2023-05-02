@@ -42,6 +42,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  height: 100vh;
+  z-index: 1000;
   /* border-left: 1px solid rgba(255, 255, 255, 0.877); */
 }
 
@@ -118,4 +120,37 @@
 .image {
   height: 50px;
   margin: 0 35px;
+}
+
+.hands {
+  object-fit: cover;
+  background: url(../../public/img/engagiert.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  height: 381px;
+  border-radius: 20px;
+}
+
+.people {
+  object-fit: cover;
+  background: url(../../public/img/innovativ.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  height: 381px;
+  border-radius: 20px;
+}
+
+.man {
+  object-fit: cover;
+  background: url(../../public/img/kundennah.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  height: 381px;
+  border-radius: 20px;
 }
