@@ -17,7 +17,7 @@ export default function Call() {
           </p>
         </div>
         <Link
-          href="tel:8665562570"
+          href="tel:0319441111"
           className="bg-white rounded-md px-8 py-3 flex items-center"
         >
           <Image src={call} height="auto" alt="icon call" />

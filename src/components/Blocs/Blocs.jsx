@@ -10,7 +10,7 @@ export default function Blocs() {
     <div className="relative container mx-auto px-5 z-50">
       <div className="absolute left-0 right-0 -top-16 flex flex-col md:flex-row items-center justify-center md:space-x-7">
         {/* left block */}
-        <div className="bg-[#00CB39] px-5 py-10 max-w-[518px] rounded-md">
+        <div className="bg-[#00CB39] px-5 py-10 max-w-[518px] rounded-md mb-5 md:mb-0">
           <div className="space-y-5">
             <Image src={Sante} height="64" alt="icon bouclier" />
             <h4 className="text-white text-3xl font-bold">Vorsorge </h4>
