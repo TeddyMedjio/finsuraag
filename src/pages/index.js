@@ -6,6 +6,7 @@ import Blocs from "@/components/Blocs/Blocs";
 import Logos from "@/components/Logos/Logos";
 import Services from "@/components/Finsura/Services";
 import Call from "@/components/Call/Call";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Logos />
       <Services />
       <Call />
+      <Footer />
     </main>
   );
 }

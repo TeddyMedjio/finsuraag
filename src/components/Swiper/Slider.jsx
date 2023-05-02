@@ -29,7 +29,7 @@ export default function Slider() {
       >
         <SwiperSlide>
           <div className="relative container mx-auto ">
-            <div className="  max-w-[500px] absolute left-0 top-0 mt-[40%] lg:mt-[20%] text-center lg:text-left  ">
+            <div className="  max-w-[500px] absolute left-0 top-0 mt-[50%] lg:mt-[20%] text-center lg:text-left  ">
               <h1 className="text-brand-blue font-bold text-5xl">
                 Finanzielle Sicherheit
               </h1>
@@ -49,7 +49,7 @@ export default function Slider() {
 
         <SwiperSlide>
           <div className="relative container mx-auto">
-            <div className="  max-w-[550px] absolute right-0 top-0 mt-[40%] lg:mt-[20%] text-center lg:text-left  ">
+            <div className="  max-w-[550px] absolute right-0 top-0 mt-[50%] lg:mt-[20%] text-center lg:text-left  ">
               <h1 className="text-brand-blue font-bold text-5xl">
                 Schutz im Alltag
               </h1>
