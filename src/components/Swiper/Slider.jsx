@@ -1,9 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import Link from "next/link";
-import slide from "../../../public/img/family.jpg";
-import slide2 from "../../../public/img/family2.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -27,9 +24,9 @@ export default function Slider() {
         modules={[Autoplay, Pagination, Navigation]}
         className="swiper"
       >
-        <SwiperSlide>
-          <div className="relative container mx-auto ">
-            <div className="  max-w-[500px] absolute left-0 top-0 mt-[50%] lg:mt-[20%] text-center lg:text-left  ">
+        <SwiperSlide className="family relative z-40">
+          <div className="relative container mx-auto z-[45]">
+            <div className=" max-w-[500px] absolute left-0 top-0 mt-[50%] lg:mt-[20%] text-center lg:text-left">
               <h1 className="text-brand-blue font-bold text-5xl">
                 Finanzielle Sicherheit
               </h1>
@@ -37,18 +34,18 @@ export default function Slider() {
                 Sichere dich und deine Familie für unsichere Zeiten ab
               </p>
               <Link
-                href="/barbora-regielova"
+                href="/"
                 className="font-bold uppercase transition-all duration-300 ease bg-brand-blue hover:bg-brand-red text-white py-3 px-3 hover:px-7 rounded cursor-pointer tracking-widest "
               >
                 Mehr erfahren
               </Link>
             </div>
           </div>
-          <Image src={slide} height="100%" alt="image de la notaire" />
+          <div className="absolute left-0 top-0 bg-white w-full h-full opacity-70 z-[41] lg:hidden"></div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="relative container mx-auto">
+        <SwiperSlide className="family2 relative z-40">
+          <div className="relative container mx-auto z-[45]">
             <div className="  max-w-[550px] absolute right-0 top-0 mt-[50%] lg:mt-[20%] text-center lg:text-left  ">
               <h1 className="text-brand-blue font-bold text-5xl">
                 Schutz im Alltag
@@ -57,14 +54,14 @@ export default function Slider() {
                 Schütze dich und deine Gegenstände vor Risiken im Alltag
               </p>
               <Link
-                href="/barbora-regielova"
+                href="/"
                 className="font-bold uppercase transition-all duration-300 ease bg-brand-blue hover:bg-brand-red text-white py-3 px-3 hover:px-7 rounded cursor-pointer tracking-widest "
               >
                 Mehr erfahren
               </Link>
             </div>
           </div>
-          <Image src={slide2} height="100%" alt="image de la notaire" />
+          <div className="absolute left-0 top-0 bg-white w-full h-full opacity-70 z-[41] lg:hidden"></div>
         </SwiperSlide>
       </Swiper>
     </>
