@@ -41,22 +41,10 @@ body {
   align-items: center;
 }
 
-.family {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../../public/img/family.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-.family2 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url(../../public/img/family2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
   object-fit: cover;
 }
 
