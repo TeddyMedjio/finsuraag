@@ -38,7 +38,7 @@ export default function Footer() {
             <span className="mr-2">
               <Image src={horloge} />
             </span>
-            Mon - Fri : 09:00 - 19:00
+            Mon-Fri : 09:00 - 19:00
           </p>
           <div className="flex items-center space-x-3">
             <Link
