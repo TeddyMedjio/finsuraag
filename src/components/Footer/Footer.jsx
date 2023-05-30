@@ -32,7 +32,7 @@ export default function Footer() {
             <span className="mr-2">
               <Image src={mail} />
             </span>
-            Email:info@finsura.ch
+            Email: info@finsura.ch
           </p>
           <p className="flex items-center text-white">
             <span className="mr-2">
